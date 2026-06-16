@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProProfile</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <header class="header">
+        <div class="logo">
+          <span class="logo-icon">P</span>
+          ProProfile
+        </div>
+      </header>
+
+      <div class="profile-select">
+        <label for="profileDropdown">Active Profile</label>
+        <select id="profileDropdown"></select>
+      </div>
+
+      <div class="preview" id="preview">
+        <p class="preview-title" id="previewTitle">—</p>
+        <p class="preview-about" id="previewAbout">—</p>
+        <div class="skills" id="previewSkills"></div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="btn btn-primary" id="copyBtn">
+          Copy Profile
+        </button>
+        <button type="button" class="btn btn-secondary" id="copyTitleBtn">
+          Copy Title
+        </button>
+        <button type="button" class="btn btn-secondary" id="copyAboutBtn">
+          Copy About
+        </button>
+        <button type="button" class="btn btn-secondary" id="copySkillsBtn">
+          Copy Skills
+        </button>
+      </div>
+
+      <footer class="footer">
+        <a href="#" id="openDashboard" target="_blank">Open Dashboard</a>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
