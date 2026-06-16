@@ -6,7 +6,9 @@ services:
       args:
         NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-https://proprofile-backend.ddnsfree.com/api}
     ports:
-      - "${PORT:-3001}:3000"
+      - "${HOST_PORT:-3001}:3000"
     environment:
+      PORT: "3000"
+      HOSTNAME: "0.0.0.0"
       NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-https://proprofile-backend.ddnsfree.com/api}
     restart: unless-stopped
